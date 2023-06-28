@@ -12,6 +12,8 @@ import java.util.concurrent.ExecutionException;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
+//Ref: https://www.thetechnojournals.com/2019/10/how-to-read-large-file-in-java.html
+
 public class FileProcessing {
 
     private final long mb = 1024*1024;
@@ -110,3 +112,22 @@ public class FileProcessing {
             countMap.put(key, 1);
     }
 }
+
+
+/**
+ * Synchronous processing:
+ * Used memory pre run (MB): 41
+ * Year count: {2019=1178560, 2018=2775136, 2017=559632, 2016=250144, 2015=248192, 2014=144656}
+ * Used memory post run (MB): 304
+ * Memory consumed (MB): 262
+ * Time taken in MS: 1971
+ */
+
+/**
+ * Asynchronous processing:
+ * Used memory pre run (MB): 120
+ * Year count: {2019=1178560, 2018=2775136, 2017=559632, 2016=250144, 2015=248192, 2014=144656}
+ * Used memory post run (MB): 262
+ * Memory consumed (MB): 142
+ * Time taken in MS: 1549
+ */
