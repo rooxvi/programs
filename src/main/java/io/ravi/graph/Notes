@@ -1,0 +1,9 @@
+Graph => Represented as matrix (Two dimensional array)
+------
+Vertex => It denotes Node in matrix
+Edge => Relationship between two nodes
+
+Types:
+Undirected Graph
+  Relation: (Row)-----1-----(Column)
+

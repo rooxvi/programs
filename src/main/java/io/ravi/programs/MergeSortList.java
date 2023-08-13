@@ -6,7 +6,7 @@ import java.util.List;
 public class MergeSortList {
 
     public static void main(String[] args) {
-        System.out.println(sort(8, List.of(345, 72,33, 3, 5, 4,0,-1 )));
+       // System.out.println(sort(8, List.of(345, 72,33, 3, 5, 4,0,-1 )));
     }
 
     public static List<Integer> sort(int n, List<Integer> arr) {

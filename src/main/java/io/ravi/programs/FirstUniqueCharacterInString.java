@@ -11,7 +11,7 @@ public class FirstUniqueCharacterInString {
 
     public static void main(String[] args) {
         //firstUniqueChar("Ravichandran");
-        System.out.println(firstUniqueNumber(List.of(1,2,4,3,1,2,3)));;
+        //System.out.println(firstUniqueNumber(List.of(1,2,4,3,1,2,3)));;
     }
 
     public static String firstUniqueChar(String s) {

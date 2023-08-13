@@ -30,8 +30,7 @@ public class CombinationSum {
         m.add(6);
         m.add(7);
         m.add(8);
-        for(var e:subsetsWithDup(5,m))
-         System.out.println(e);
+
     }
 
     public static void combinationSum(int[] arr, List<Integer> bag, int index, int sum, int target){
