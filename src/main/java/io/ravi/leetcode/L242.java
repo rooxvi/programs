@@ -23,4 +23,21 @@ public class L242 {
         }
         return true;
     }
+
+    public static boolean isValidWithChars(String l,String r){
+        if(l.length() != r.length()) return false;
+        int[] count_charts = new int[256];
+        System.out.println(Arrays.toString(count_charts));
+        for(int i = 0;i<l.length();i++){
+            count_charts[l.charAt(i)]++;  // int value = count_charts[l.charAt(i)-'a']; value = value + count_charts[l.charAt(i)-'a'] = value;
+            count_charts[r.charAt(i)]--;
+        }
+        System.out.println(Arrays.toString(count_charts));
+        for (int value: count_charts){
+            if(value!=0)
+                return false;
+
+        }
+        return true;
+    }
 }
