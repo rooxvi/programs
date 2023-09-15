@@ -1,6 +1,6 @@
 package io.ravi.programs;
 
-public class RemoveIfUpperLowerPairAdjusent {
+public class RemoveIfUpperLowerPairAdjacent {
     public static void main(String[] args) {
 
         //Example 1 :  "aAcbBadEFCcaa" -> "cadEFaa"
