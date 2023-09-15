@@ -1,5 +1,7 @@
 package io.ravi.programs;
 
+// Asked by persistence
+
 public class RemoveIfUpperLowerPairAdjacent {
     public static void main(String[] args) {
 
@@ -15,13 +17,9 @@ public class RemoveIfUpperLowerPairAdjacent {
         int j = 0;
         char[] r = new char[s.length()];
         while (i < s.length() - 1) {
-            if (s.charAt(i) - 'a' == s.charAt(i + 1) - 'A') {
-                i = i + 2;
-                continue;
-            }
-            if (s.charAt(i) - 'A' == s.charAt(i + 1) - 'a') {
-                i = i + 2;
-                continue;
+            if ((s.charAt(i) - 'a' == s.charAt(i + 1) - 'A') ||
+                    (s.charAt(i) - 'A' == s.charAt(i + 1) - 'a')) {
+                i += 2;
             }
 
             if (j < s.length()) {
