@@ -30,7 +30,8 @@ public class RemoveIfUpperLowerPairAdjacent {
             }
 
             if(j>=2) {
-                if (r[j-2] - 'a' == r[j-1] - 'A' || r[j-2] - 'A' == r[j-1] - 'a') {
+                if (r[j-2] - 'a' == r[j-1] - 'A'
+                        || r[j-2] - 'A' == r[j-1] - 'a') {
                     j = j -2;
                 }
             }
