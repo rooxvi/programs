@@ -1,2 +1,5 @@
-package io.ravi.pattern.decorator;public interface Icecream {
+package io.ravi.pattern.decorator;
+
+public interface Icecream {
+    String makeIcecream();
 }
