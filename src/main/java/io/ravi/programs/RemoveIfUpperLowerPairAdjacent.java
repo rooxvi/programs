@@ -4,12 +4,11 @@ package io.ravi.programs;
 
 public class RemoveIfUpperLowerPairAdjacent {
     public static void main(String[] args) {
-
         //Example 1 :  "aAcbBadEFCcaa" -> "cadEFaa"
         //Example 2 : "dDHcbBdEF" -> "HcdEF"
-        System.out.println( removePairIfUpperLower("CaAcCbBcadEFCcaa"));
-        System.out.println( removePairIfUpperLower("dDHcbBdEF"));
-        System.out.println(removePairIfUpperLower("CbAaBcA"));
+        System.out.println( removePairIfUpperLower("cCCAbBadC"));
+        //System.out.println( removePairIfUpperLower("dDHcbBdEF"));
+        //System.out.println(removePairIfUpperLower("CbAaBcA"));
     }
 
     private static String removePairIfUpperLower(String s) {

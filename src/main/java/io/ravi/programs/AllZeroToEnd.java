@@ -5,8 +5,7 @@ import java.util.List;
 
 public class AllZeroToEnd {
     public static void main(String[] args) {
-        //int x[] = {0,1,3,0,0,4,0,66,0,2,3,0,66,0};
-        int[] x = {0,0,0,0};
+        int x[] = {0,1,3,0,0,4,0,66,0,2,3,0,66,0};
         System.out.println(Arrays.toString(x));
         moveAllZeroToEnd(x);
         System.out.println(Arrays.toString(x));

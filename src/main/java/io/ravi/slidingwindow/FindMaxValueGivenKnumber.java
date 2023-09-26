@@ -4,7 +4,8 @@ public class FindMaxValueGivenKnumber {
 
     public static void main(String[] args) {
 
-        System.out.println(findMaxSumGivenK(new int[]{1,2,3,4,5,6},3));
+       // System.out.println(findMaxSumGivenK(new int[]{1,2,3,4,5,6},3));
+        System.out.println(findMinSubArray(new int[]{1,2,3,4,-1,5},7));
     }
 
     private static int findMaxSumGivenK(int[] array,int k){
@@ -22,6 +23,23 @@ public class FindMaxValueGivenKnumber {
         }
 
         return runningMaxValue;
+    }
+
+    // {1,5,3,4,-1,5}, 7
+    private static int findMinSubArray(int[] array, int target){
+        int windowSum = 0;
+        int windowStart=0;
+        for ( int windowEnd=0;windowEnd<array.length;windowEnd++ ){
+            windowSum+=array[windowEnd];
+            while (windowSum >= target){
+                System.out.println(windowSum+" : "+ windowStart+" --- "+windowEnd);
+                windowSum -= array[windowStart];
+                System.out.println(windowSum+" : "+ windowStart+" --- "+windowEnd);
+                windowStart++;
+            }
+        }
+
+        return windowSum;
     }
 
 }
