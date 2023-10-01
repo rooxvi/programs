@@ -87,6 +87,7 @@ public class Java8Programs {
                 new Employee(2,"Ram","IT","Male","105"),
                 new Employee(3,"Rag","IT","Female","300"),
                 new Employee(4,"Rechal","IT","Female","240"),
+                new Employee(4,"Rechal1","IT","Female","290"),
                 new Employee(4,"Rechal1","IT","Female","290")
         );
 
@@ -104,6 +105,11 @@ public class Java8Programs {
         );
 
         System.out.println(IdName);
+
+        // Remove duplicate
+        Set<Employee> uniqueEmp = employee1.stream().collect(Collectors.toSet());
+        System.out.println(" Unique emp " +uniqueEmp);
+
 
 
     }
