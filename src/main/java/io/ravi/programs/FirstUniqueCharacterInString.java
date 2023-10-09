@@ -25,7 +25,12 @@ public class FirstUniqueCharacterInString {
         System.out.println(p);
 
         Stream<Character> characterStream = s.chars().mapToObj(c -> (char) c);
-        Character find = characterStream.collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
+        Character find = characterStream.collect(
+                        Collectors.groupingBy(
+                                Function.identity(),
+                                LinkedHashMap::new,
+                                Collectors.counting())
+                )
                 .entrySet().stream().filter(e -> e.getValue() == 1)
                 .map(e -> e.getKey())
                 .findFirst().get();
@@ -36,9 +41,28 @@ public class FirstUniqueCharacterInString {
     public static int firstUniqueNumber(List<Integer> numbers) {
         Map<Character, Long> charArray = new LinkedHashMap<>();
         int unique = numbers.get(0);
-        for(int i=1;i<numbers.size();i++){
+        for (int i = 1; i < numbers.size(); i++) {
             unique ^= numbers.get(i);
         }
         return unique;
     }
+
+
+    public static int firstUniqueCharacterUsingCharArray(String word) {
+
+        char[] count = new char[256];
+        for (int index = 0; index < word.length(); index++) {
+            count[word.charAt(index)]++;
+        }
+
+        for (int index = 0; index < word.length(); index++) {
+            if (count[word.charAt(index)] == 1) {
+                return index;
+            }
+        }
+
+        return -1;
+    }
+
+
 }
