@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Java8Programs {
@@ -112,6 +113,16 @@ public class Java8Programs {
 
 
 
+        // {Ravichandran = 2}
+        String s = "Ravichandran Santhanam1234567 Ravichandran Santhanam1234567 Santhanam1234567";
+        Map.Entry<String, Long> r = Arrays.stream(s.split(" "))
+                .collect(Collectors.groupingBy(
+                        Function.identity(),
+                        Collectors.counting()
+                ))
+                .entrySet().stream()
+                .max(Comparator.comparing(e -> e.getKey().length()))
+                .get();
     }
 }
 

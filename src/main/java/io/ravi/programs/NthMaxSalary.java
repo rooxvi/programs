@@ -1,9 +1,6 @@
 package io.ravi.programs;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class NthMaxSalary {
@@ -23,6 +20,7 @@ public class NthMaxSalary {
                 .entrySet()
                 .stream()
                 .sorted(Collections.reverseOrder(Map.Entry.comparingByKey()))
+                //.sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .collect(Collectors.toList())
                 .get(n-1);
 

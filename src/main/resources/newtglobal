@@ -1,0 +1,17 @@
+How POD going to communicate with RDS
+   -- Using service account with role based policy
+How EFS & EBS mounted with POD
+  -- In kubernetes env use PV,PVC & storage class
+Ingress Vs Service
+Different secret manager in AWS,kubernetes & Vault like KMS
+Helm chart explanation
+How to debug kubernetes failure
+How to debug AWS RDS failure
+AWS Service account & Role based access concepts
+How to communicate AWS service with Java application & how to pass credentials to services
+CI CD pipeline
+How to mount EBS & EFS using kubernetes - PersistenceVolume & PersistenceVolumeClaim
+Kubernetes Controller
+
+//Mount EBS to POD
+StorageClass --> PersistenceVolume --> PersistenceVolumeClaim -->
