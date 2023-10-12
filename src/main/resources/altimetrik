@@ -7,6 +7,6 @@ How to migrate data from oracle database to mongodb, constraint is zero down tim
 Setter injection & constructor injection, what will happen both in same class for same object
 What is Circular Injection in Spring Boot
 How to read each message twice in Kafka
-Adapter dessign pattern
+Adapter design pattern
 Write query to return sum of salary based on Employee & Dept table using sql joins
 // Example 2: Y=[2,10,3,8,9,2,2,6,9,4,2,6,7] X=2 Expected Out Put : Y=[10,3,8,9,6,9,4,6,7,2,2,2,2] Java program
