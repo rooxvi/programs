@@ -39,9 +39,7 @@ public class Zenser {
                 .entrySet()
                 .stream()
                 .map(entry -> entry.getValue().stream()
-                        .sorted(Collections.reverseOrder(
-                                Comparator.comparing(EmployeeZenser::getSalary))
-                        )
+                        .sorted(Comparator.comparing(EmployeeZenser::getSalary).reversed())
                         .collect(Collectors.toList()).get(1)
                 ).collect(Collectors.toMap(EmployeeZenser::getDept,EmployeeZenser::getName,(o,n)->o));
         System.out.println(re);

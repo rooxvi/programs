@@ -1,0 +1,206 @@
+Interview discussion
+
+add(double,dobule){}
+add(float,float){}
+
+add(4,6); -
+
+final Person p1= new Person("Kapil");
+Person p2= new Person("Ravi");
+p1=p2;
+p1.setName("Ajay");
+
+//OOOPS , - Encapsulation , Abstarction
+class MyStack
+{
+  ArrayList<Integer> list= new ArrayList<>();
+
+  MyStack(List kist){
+    list=klist;
+  }
+  public void push(int i)(
+    add(i);
+  )
+
+  public void pop(){
+    remove();
+  }
+}
+
+IStack ms= new MyStack();//
+ms.push(10);
+ms.addAll();
+ms.iterator();
+
+===========================================================
+SRP
+
+IGenrateReport{
+  createReport();
+}
+
+class ExceReport extends IGenrateReport {
+  createReport(){
+
+  }
+}
+class PdfReport extends IGenrateReport {
+  createReport(){
+
+  }
+}
+class factory {
+  IGenrateReport report;
+  IGenrateReport getInstance(){
+  if(type==PDF){
+        IGenrateReport report = new pDfReport();
+      }else if (type==EXCEL){
+        ExcelReprot report = new pDfReport();
+      }else if (type==CSV){
+        ExcelReprot report = new pDfReport();
+      }
+      return report;
+  }
+}
+
+Class GenerateReport
+{
+  IGenrateReport report;
+    writeReport(String type){
+      report.createReport();
+    }
+
+    getDBCon(){}
+
+    getData(){}
+
+    writePdf(){}
+}
+
+Main(){
+Igenrate gr=new Generate("");
+cretaeRpeort("PDF");
+gr.writePdf();
+}
+
+Single Factory Adapter builder
+
+========================================================
+
+Use case - 3,1,19,6,5,10 - Sort(O(n*logn))
+new araryLs(100000);
+ArrayList - O(1)+O(n)=
+
+LinkedList - O(1)
+
+Class Employee{
+  name, age ,Id
+  // egtter seett
+}
+
+list.stream().sorted(Comparater.compare(Employee::getName).thenCom).collectors(Collections.toList());
+K-> NAme , V- Age > 45, TreeMap
+Map<String,Interger> map= list.stream().filter(
+
+).collect(Collectors.toMap(
+  Employee::name,
+  Employee::Age,
+  (o1,o2)->o2,
+   TreeMap::new,
+))
+
+extens Animal,  ?
+
+final Class Employee{
+  final name, age ,Id
+  // egtter seet
+  hashCode(){}
+  euas(){
+
+  }
+}
+
+Map<Employee,Double> map;
+Empoyee e = new Empy(Kapil, 101, 35);
+map.put(e,10000);
+e.setName(Ajay);
+map.get(e); //1000
+
+==================================================
+
+C:/User/district_popuation_files/d1.txt,d3.tx..d1000.txt;
+
+class DistFileReadTask implements Callable<Integer>{
+
+  DistFileReadTask(String name){
+
+  }
+
+  @Override
+  public Integer run(){
+     return num;
+  }
+}
+
+ExecuterService e = Executor.newFfixedThreadPool(3);
+
+List<DistFileReadTask> tasks = new ArrayList<>();
+
+List<> e.invokeAll(tasks);
+========================================================================================
+
+Orcale, MySQl, Mongo Sping Boot,edis elasti search, Spring tda
+
+Employee |  Salary
+
+id,name,age | id,sal
+
+select id,name, sal from employee e LEFT JOIN Salary s ON e.id = s.id where sal > 10000;
+crete ...;
+
+==========================================================================================
+Netflix Suit
+               [UI]
+                |
+           [Route 53]
+                |
+        [Spring Cloud Gateway]    - - OAuth2.0 -  JWT [Header . Paylaod . Signature ] -v
+                                  - logging , Authevtica valdiatoo
+             |
+  [Data consitency]      | (Lcocal T) - Saga- Choreograpgy . Circit Breaker
+    [user service]   [2 kafka Tiopic]  [checkout]  [Paymenet]
+       |                |
+     [Db1]           [Db2]       [Db3]
+                                            [Reporting Service]
+                   [Event Store]       [DB4]
+ Event_Id Event_derciption
+ 1
+ 2
+ 3
+ 4
+
+ Disticbuted tracing - Zipkins , Kibana , Elastic Serch
+ Distube cache - Redis []
+ Rest Best practice
+ ------------------
+ 1. Idemptonce
+
+ AWS - ec2, efs, ebs, S3 , rds, lamda,  eks ,
+ API Gateway - Not?
+ ---
+ -Teraform , EKS & helm   - load balcer
+ -sevice disocvery
+  - clinet or server side
+- git lab pipleine- SCM
+- JMeter
+- Actiator  -Prometheus / Grafana
+
+Gol lang ',Kotlin - Hdnon
+Bug fix - react, Node
+Header versing
+---------------
+/getName
+
+first Name
+
+Clinet 2 - full aname

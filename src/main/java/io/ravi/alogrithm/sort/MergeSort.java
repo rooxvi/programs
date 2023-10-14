@@ -34,7 +34,7 @@ public class MergeSort {
     rightArray array.
   */
         for (int i = left; i <= mid; i++) {
-            rightArray[i - left] = array[i];
+            rightArray[i] = array[left+i];
         }
 
   /*
