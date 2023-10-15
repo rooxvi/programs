@@ -1,0 +1,13 @@
+Relational Database:
+  MySQL
+    -- vertical scaling
+    -- use master slave - master for write & slave for read
+    -- Use HAProxy for load balancing
+  Scaling:
+   -- Vertical scaling  (RDS supports upt 24TB of RAM)
+   -- Horizontal scaling
+
+  Sharding:
+
+
+

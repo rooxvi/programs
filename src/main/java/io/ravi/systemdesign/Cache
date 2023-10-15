@@ -1,0 +1,8 @@
+Redis, memcache,.. etc
+
+Strategy:
+  -- Cache through
+
+Memory management
+  -- Evict data if data is full
+  -- Use LRU to delete old data
