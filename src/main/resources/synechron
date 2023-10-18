@@ -1,2 +1,24 @@
 design payment system
 what is consumer lag in kafka
+
+String - In-depth memory management & immutable
+
+Spring bean scopes
+
+How to handle multiple transaction with singleton scope
+  - If we have Employee object then how it is going to be handle multiple request
+  - Search it over google
+  - Ref: https://www.javadevjournal.com/spring/spring-singleton-vs-singleton-pattern/
+
+Spring framework singleton vs JVM singleton
+
+Why is string class immutable
+   - intrim method
+
+How spring transactions work internally
+  - Scope
+
+classnotfoundexception vs noclassdeffounderror - Which is exception and which is error?
+
+
+
