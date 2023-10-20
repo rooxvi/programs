@@ -27,8 +27,21 @@ What is namespace in kubernetes?
   - will it take any space while creating
   - limitations of namespace in kubernetes
   - Allowed number namespace creation
-
 Pod vs Docker
+HTTP Methods
+PUT vs PATH
+How routing works in API Gateway
+Difference between CI(Continues Integration) and CD(Continues Delivery)
+Best practice to docker build?
+  - What is docker build?
+  - Multistage docker build?
+Advantages of docker image size, what are the advantages when you have docker image size small
+Helm
+
+
+Blockchain
+Private blockchain
+NodeJS API for block chain
 
 
 
