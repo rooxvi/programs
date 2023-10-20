@@ -15,3 +15,20 @@ Kubernetes Controller
 
 //Mount EBS to POD
 StorageClass --> PersistenceVolume --> PersistenceVolumeClaim -->
+
+// Third round
+
+What is POD, why the pod is there
+POD to POD communication
+Deployment replicas vs ReplicaSet
+Service Vs Ingress
+Why ReplicaSet when we have scheduler in
+What is namespace in kubernetes?
+  - will it take any space while creating
+  - limitations of namespace in kubernetes
+  - Allowed number namespace creation
+
+Pod vs Docker
+
+
+
