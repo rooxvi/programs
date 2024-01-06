@@ -87,9 +87,9 @@ public class Java8Programs {
                 new Employee(1,"Ravi","IT","Male","100"),
                 new Employee(2,"Ram","IT","Male","105"),
                 new Employee(3,"Rag","IT","Female","300"),
-                new Employee(4,"Rechal","IT","Female","240"),
-                new Employee(4,"Rechal1","IT","Female","290"),
-                new Employee(4,"Rechal1","IT","Female","290")
+                new Employee(5,"Anbu","IT","Female","240"),
+                new Employee(8,"Kumar","IT","Female","290"),
+                new Employee(9,"Rechal1","IT","Female","290")
         );
 
         //employee1.stream().distinct().collect(Collectors.toMap(Employee::getId,Employee::getName));

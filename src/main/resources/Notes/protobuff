@@ -1,0 +1,7 @@
+Advantages:
+ - Small data size on transmit compare to format like, JSON, XML
+ -
+Disadvantage:
+ - Google responsible to generate language specific files, which lead to error in future
+ - Schema needs to be maintained
+ -
