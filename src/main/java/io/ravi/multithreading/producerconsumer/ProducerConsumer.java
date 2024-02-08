@@ -1,4 +1,4 @@
-package io.ravi.multithreading;
+package io.ravi.multithreading.producerconsumer;
 
 class ShowRoom {
     int value;

@@ -1,7 +1,8 @@
-package io.ravi.multithreading;
+package io.ravi.multithreading.oddeven;
 
 import java.util.concurrent.TimeUnit;
 
+@Deprecated
 public class PrintOddEvenNumberByTwoThreads {
     public static void main(String[] args) {
         PrintSequence printSequence = new PrintSequence();

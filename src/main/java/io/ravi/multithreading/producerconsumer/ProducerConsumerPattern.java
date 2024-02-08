@@ -1,4 +1,4 @@
-package io.ravi.multithreading;
+package io.ravi.multithreading.producerconsumer;
 
 import java.util.PriorityQueue;
 import java.util.Queue;

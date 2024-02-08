@@ -1,6 +1,5 @@
-package io.ravi.multithreading;
+package io.ravi.multithreading.printinsequence;
 
-import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class PrintInSequence {
