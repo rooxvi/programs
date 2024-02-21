@@ -2,10 +2,15 @@ package io.ravi.multithreading.cyclicbarrier;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.locks.Lock;
 
 public class CyclicBarrierExample {
 
     public static void main(String[] args) {
+
+        Lock lock;
+        Semaphore semaphore;
         CyclicBarrier cyclicBarrier = new CyclicBarrier(3, new Runnable() {
             @Override
             public void run() {
@@ -24,9 +29,9 @@ public class CyclicBarrierExample {
     }
 
     static class Biker implements Runnable{
-        String name;
-        CyclicBarrier cyclicBarrier;
-        int travelTime;
+        private String name;
+        private CyclicBarrier cyclicBarrier;
+        private int travelTime;
 
         public Biker(String name, CyclicBarrier cyclicBarrier, int travelTime) {
             this.name = name;

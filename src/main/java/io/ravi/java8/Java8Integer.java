@@ -16,7 +16,7 @@ public class Java8Integer {
         System.out.println(sortedValue);
 
         List<Integer> sortedValueComp = numbers.stream()
-                                               .sorted(Comparator.comparing(Integer::new))
+                                               //.sorted(Comparator.comparing(Integer::new))
                                                .collect(Collectors.toList());
         System.out.println(sortedValueComp);
     }

@@ -1,4 +1,10 @@
 How to pass headers in SQS
+   Answer:
+       Amazon Simple Queue Service (SQS) is a fully managed message queuing service provided by AWS.
+       When working with SQS, you typically interact with it using the AWS SDK for your programming
+       language of choice. While SQS itself does not have traditional HTTP headers like in a web API,
+       it does have message attributes that you can use to pass metadata along with the message.
+
 Private IP vs Public IP vs Elastic IP
 Kafka Vs Confluent Kafka
   -- Both are open source

@@ -15,9 +15,11 @@ public class Java8Programs {
         List<Employee> employees = Arrays.asList(
                 new Employee(1,"Ravi","IT","Male","100"),
                 new Employee(2,"Ram","ECE","Male","105"),
-                new Employee(3,"Rag","IT","Female","300"),
+                new Employee(3,"Rag","IT","Male","300"),
                 new Employee(4,"Rechal","IT","Female","240"),
-                new Employee(4,"Rechal1","CSE","Female","290")
+                new Employee(5,"Gunjan","CSE","Female","290"),
+                new Employee(6,"Venkatesh","HR","Male","290"),
+                new Employee(7,"Kumar","CSE","Male","290")
         );
 
 
@@ -137,4 +139,12 @@ class Employee{
     private String dept;
     private String gender;
     private String salary;
+
+    /*public Employee(Integer id, String name, String dept, String gender, String salary) {
+        this.id = id;
+        this.name = name;
+        this.dept = dept;
+        this.gender = gender;
+        this.salary = salary;
+    }*/
 }
