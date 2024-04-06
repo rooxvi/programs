@@ -1,21 +1,21 @@
-// OOPS concepts
-// Main method over loading in java
-// Why OOPS concepts
-// What is encapsulation
-// SOLID principle, explain Liskov Substitution principle
-// Why called collections as collection in Java
-// PriorityQueue
-// CQRS pattern
-// Consumer group
-// JDBC execute executeUpdate executeQuery
-// What happen if OAuth token stolen
-// How to setup ssl in tomcat/spring boot and where certificates stored
-// Service discovery
-// How redis cache handled in distributed environment
-// How actuator works in spring boot
-// Add custom actuator endpoint in spring boot
-// If service discovery goes down
-// Micro services pattern - Gateway pattern, Service Discovery, Config server,
-// Kafka consumer group
-// Secure spring boot actuator api from outer world and role level access
-// @Component @Service @Repository why these many annotations, is any specific reason and differences and special feature
+OOPS concepts
+Main method over loading in java
+Why OOPS concepts
+What is encapsulation
+SOLID principle, explain Liskov Substitution principle
+Why called collections as collection in Java
+PriorityQueue
+CQRS pattern
+Consumer group
+JDBC execute executeUpdate executeQuery
+What happen if OAuth token stolen
+How to setup ssl in tomcat/spring boot and where certificates stored
+Service discovery
+How redis cache handled in distributed environment
+How actuator works in spring boot
+Add custom actuator endpoint in spring boot
+If service discovery goes down
+Micro services pattern - Gateway pattern, Service Discovery, Config server,
+Kafka consumer group
+Secure spring boot actuator api from outer world and role level access
+@Component @Service @Repository why these many annotations, is any specific reason and differences and special feature

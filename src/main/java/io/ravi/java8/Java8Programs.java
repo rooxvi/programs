@@ -22,7 +22,6 @@ public class Java8Programs {
                 new Employee(7,"Kumar","CSE","Male","290")
         );
 
-
         Map<String,Long> result = employees.stream().collect(Collectors.groupingBy(
                 Employee::getGender,Collectors.counting()
         ));
@@ -33,12 +32,12 @@ public class Java8Programs {
         ));
 
         Map<String,Double> r3 = employees.stream().collect(Collectors.groupingBy(
-                Employee::getGender,
+                Employee::getDept,
                 Collectors.averagingInt(employee -> Integer.valueOf(employee.getSalary()))
         ));
 
-        System.out.println(result);
-        System.out.println(r2);
+        //System.out.println("getGender: "+result);
+        //System.out.println(r2);
         System.out.println(r3);
 
         // Collect male and female employee as list
@@ -148,3 +147,6 @@ class Employee{
         this.salary = salary;
     }*/
 }
+
+
+
