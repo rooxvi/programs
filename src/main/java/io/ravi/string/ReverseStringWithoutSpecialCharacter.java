@@ -2,7 +2,7 @@ package io.ravi.string;
 
 public class ReverseStringWithoutSpecialCharacter {
     public static void main(String[] args) {
-        System.out.println(reverseStringWithoutSpecialCharacter("Ra$Vi.S"));
+        System.out.println(reverseStringWithoutSpecialCharacter("eshan@gmail.com"));
     }
 
     private static String reverseStringWithoutSpecialCharacter(String word) {
