@@ -2,7 +2,7 @@ package io.ravi.leetcode;
 
 import java.util.Arrays;
 
-public class L242 {
+public class ValidAnagram242 {
 
     public static void main(String[] args) {
         System.out.println(isValid("mam","amn"));
