@@ -4,3 +4,15 @@ What is the impact of using a prototype-scoped bean within a singleton-scoped be
 Move zero's to one side
 
 Remove duplicates from array without using any collection/built in function
+
+
+Used tech stack
+MinIO
+Ceph
+Dropwizard
+MongoDB
+AWS SQS,SNS, Kafka
+
+
+Migrate old SQS to new SQS efficiently
+Migrate MongoDB to DocumentDB
