@@ -1,8 +1,0 @@
-Dual write problem
- - Transactional Outbox Pattern:
- - Change Data Capture (CDC)
-      https://netflixtechblog.com/dblog-a-generic-change-data-capture-framework-69351fb9099b
- - Transactional Changelog Events
- - Idempotent Consumers
- - Compensating Transactions
- - Sagas Pattern
