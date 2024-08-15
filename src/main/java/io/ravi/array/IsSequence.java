@@ -5,7 +5,7 @@ public class IsSequence {
     public static void main(String[] args) {
 
         String word = "azybczx";
-        String sequence = "abz";
+        String sequence = "zab";
 
         System.out.println(isSequence1(word, sequence));
 
