@@ -1,0 +1,34 @@
+@startuml
+title Builder Design Pattern
+
+class Product {
+    -partA : String
+    -partB : String
+    -partC : String
+    ..
+    +show() : void
+}
+
+class Builder {
+    +buildPartA() : void
+    +buildPartB() : void
+    +buildPartC() : void
+    +getResult() : Product
+}
+
+class ConcreteBuilder1 {
+    +buildPartA() : void
+    +buildPartB() : void
+    +buildPartC() : void
+    +getResult() : Product
+}
+
+class Director {
+    +construct() : Product
+}
+
+Product <-- Builder
+Builder <|-- ConcreteBuilder1
+Director --> Builder
+
+@enduml

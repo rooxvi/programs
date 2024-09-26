@@ -1,0 +1,16 @@
+@startuml
+
+class Singleton {
+    - static instance: Singleton
+    - Singleton()
+    + static getInstance(): Singleton
+    + someBusinessMethod(): void
+}
+
+Singleton --> Singleton : access
+
+note left of Singleton::getInstance
+  Returns the single instance of the class
+end note
+
+@enduml
