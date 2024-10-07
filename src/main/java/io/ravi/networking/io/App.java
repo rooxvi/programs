@@ -1,6 +1,5 @@
 package io.ravi.networking.io;
 
-import java.net.Socket;
 import java.util.Scanner;
 
 public class App {
