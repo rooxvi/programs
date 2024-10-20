@@ -6,7 +6,7 @@ public class PrintInSequence {
 
     public static void main(String[] args) {
         PrintSequenceRunnable runnable1=new PrintSequenceRunnable(1);
-        PrintSequenceRunnable runnable2=new PrintSequenceRunnable(2);
+        PrintSequenceRunnable runnable2=new PrintSequenceRunnable(0);
 
         Thread t1=new Thread(runnable1,"T1");
         Thread t2=new Thread(runnable2,"T2");
@@ -30,8 +30,9 @@ public class PrintInSequence {
 
         @Override
         public void run() {
-            while (number < printMaxLimit-1) {
+            while (number < printMaxLimit) {
                 synchronized (lock) {
+                    System.out.println(Thread.currentThread().getName() + ": " + "entered...");
                     while (number % 2 != reminder) {
                         try {
                             lock.wait();
