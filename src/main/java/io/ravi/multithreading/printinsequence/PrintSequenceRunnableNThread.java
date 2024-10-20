@@ -9,7 +9,7 @@ public class PrintSequenceRunnableNThread implements Runnable {
     private static int flow = 0;
     private final int maxLimit;
 
-    public PrintSequenceRunnableNThread(int totalThreads, int threadSequence,int maxLimit) {
+    public PrintSequenceRunnableNThread(int totalThreads, int threadSequence, int maxLimit) {
         this.totalThreads = totalThreads;
         this.reminder = threadSequence % totalThreads;
         this.maxLimit = maxLimit;
@@ -45,7 +45,7 @@ public class PrintSequenceRunnableNThread implements Runnable {
         int totalThreads = 3;
         Thread[] threads = new Thread[totalThreads];
         for (int i = 1; i <= totalThreads; i++) {
-            threads[i-1] =  new Thread(new PrintSequenceRunnableNThread(totalThreads, i,50), "T" + i);
+            threads[i - 1] = new Thread(new PrintSequenceRunnableNThread(totalThreads, i, 50), "T" + i);
         }
 
         for (Thread thread : threads) {
