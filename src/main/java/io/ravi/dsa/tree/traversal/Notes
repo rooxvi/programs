@@ -1,0 +1,13 @@
+Tree Traversal
+ > Breath-first
+    - Level order
+ > Depth-first
+    - <root><left><right> - Preorder
+    - <left><root><right> - Inorder
+    - <left><right><root> - Postorder
+
+
+BST - Binary Search Tree
+The root is greater than left node and less than right node
+
+Inorder traversal of Binary Search Tree(BST) will result sorted list
